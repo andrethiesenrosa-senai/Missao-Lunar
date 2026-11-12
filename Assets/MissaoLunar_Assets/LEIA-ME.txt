@@ -1,0 +1,23 @@
+MISSÃO LUNAR - ASSETS DO MINI PROJETO
+Codificação de Sistemas de Jogos Digitais - Revisão AV1
+
+Arraste a pasta inteira para Assets/ no Unity.
+
+ARQUIVO                              ETAPA   FORMATO / POR QUÊ                    CONFIGURAÇÃO NO UNITY
+Sprites/astronauta.png               3,5,8   PNG com alpha (fundo transparente)   Texture Type: Sprite (2D and UI) · Order in Layer 5
+Sprites/astronauta_dano.png          8       PNG, sprite trocado ao levar dano    Sprite (2D and UI)
+Sprites/cristal.png                  7,9     PNG com brilho semitransparente      Sprite · Collider2D com Is Trigger
+Sprites/asteroide.png                5,9     PNG                                  Sprite · culling por distância
+Sprites/escudo.png                   9       PNG semitransparente                 Sprite · desligar só o SpriteRenderer
+Cenario/ceu_estrelado.jpg            2,3     JPG opaco (sem alpha, menor)         Sprite · Order in Layer -10
+Cenario/superficie_lunar.png         3       PNG com topo transparente            Sprite · Order in Layer 0
+Cenario/poeira_primeiro_plano.png    3       PNG com alpha parcial                Sprite · Order in Layer 10
+UI/botao_jogar.png, botao_sair.png   2       PNG: cantos arredondados             Sprite (2D and UI) · usar em UI Image
+Texturas3D/rocha_lunar_normal.tga    2       TGA (ponte 3D): normal map + alpha   Texture Type: Normal map
+Audio/SFX/som_coleta.wav             7       WAV, 0,5 s, sem compressão           Load Type: Decompress On Load
+Audio/SFX/som_impacto.wav            7       WAV, 0,35 s                          Load Type: Decompress On Load
+Audio/Musica/trilha_fase.ogg         7       OGG comprimido, 3 min 12 s           Load Type: Streaming · AudioSource com Loop
+Dados/save_exemplo.json              10      JSON legível                         Exemplo para JsonUtility.FromJson
+
+A trilha é feita de 6 ciclos de 32 s que se encaixam: com loop = true, ela emenda sem corte.
+Todos os arquivos foram gerados por código para uso livre em aula.
